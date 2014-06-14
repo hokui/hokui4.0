@@ -12,6 +12,22 @@ gem 'jquery-rails'
 
 gem 'jbuilder',     '~> 2.0'
 
-gem 'spring',                   group: :development
-
 gem 'thin'
+
+group :development do
+  gem 'spring'
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
+  gem 'quiet_assets'
+
+  gem 'annotate'
+  gem 'bullet'
+  gem 'hirb'
+  gem 'hirb-unicode'
+
+  gem 'pry-rails'
+  gem 'pry-stack_explorer'
+  gem 'pry-byebug'
+end
